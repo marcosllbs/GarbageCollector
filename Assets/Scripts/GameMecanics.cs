@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class GameMecanics : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] List<GameObject> placesToInstantiateObjects;
+    [SerializeField] List<GameObject> objectsToInstantiate;
+
+    public void RamdomizePlaceToInstantiate()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RamdomizeObjectToInstantiate()
     {
-        
+
     }
 }
