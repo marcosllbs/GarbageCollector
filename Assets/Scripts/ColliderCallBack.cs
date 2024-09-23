@@ -5,6 +5,8 @@ using UnityEngine;
 public class ColliderCallBack : MonoBehaviour
 {
 
+    [SerializeField] GameMecanics gameMecanics;
+
     private void OnCollisionEnter(Collision other)
     {
         GameObject collidedObject = other.gameObject;
@@ -14,6 +16,7 @@ public class ColliderCallBack : MonoBehaviour
         if (trashTypeGarbage.garbageType == garbageTypeObject.garbageType)
         {
             Debug.Log("VOCE VENCEU MALDITO!!!!");
+            gameMecanics.CallHitPoints();
         }
         else
         {

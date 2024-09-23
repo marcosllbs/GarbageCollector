@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameMecanics : MonoBehaviour
 {
     [SerializeField] List<GameObject> placesToInstantiateObjects;
     [SerializeField] List<GameObject> objectsToInstantiate;
+    [SerializeField] GameObject trashBinGameObject;
+    [SerializeField] TMP_Text pointsText;
+
+    public int points;
+
 
     public float timeInterval = 5f;
     public float countDown = 0f;
@@ -34,6 +40,17 @@ public class GameMecanics : MonoBehaviour
         number = Random.Range(0, placesToInstantiateObjects.Count);
 
         return number;
+    }
+
+    public void RandomizeTrashBin()
+    {
+
+    }
+
+    public void CallHitPoints()
+    {
+        points++;
+        pointsText.SetText($"Points:{points}");
     }
 
     public int RamdomizeObjectToInstantiate()
