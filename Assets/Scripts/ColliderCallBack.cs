@@ -15,12 +15,12 @@ public class ColliderCallBack : MonoBehaviour
 
         if (trashTypeGarbage.garbageType == garbageTypeObject.garbageType)
         {
-            Debug.Log("VOCE VENCEU MALDITO!!!!");
+            Debug.Log("You Win");
             gameMecanics.CallHitPoints();
         }
         else
         {
-            Debug.LogWarning("VOCE PERDEU INSETO");
+            Debug.LogWarning("You Loose");
         }
 
         Destroy(collidedObject);
