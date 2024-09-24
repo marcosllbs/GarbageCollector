@@ -12501,14 +12501,23 @@ MonoBehaviour:
   - {fileID: 1392404810}
   - {fileID: 2123891233}
   objectsToInstantiate:
-  - {fileID: 4717813974208169260, guid: 51cf8750dc11e924fb8602757172710e, type: 3}
-  - {fileID: 4717813974208169260, guid: 7571c16663d9b8d4a8ea84b88516f977, type: 3}
-  - {fileID: 4717813974208169260, guid: 697c9ffa14b88d841aa5c21a6697f1b4, type: 3}
+  - {fileID: 3917164042515804727, guid: dbe3b011babfeda4087443c8f321ddd0, type: 3}
+  - {fileID: 271476687642695735, guid: ead8c19dc0ebd254f8ccdb00824789a1, type: 3}
+  - {fileID: 7666041171727930472, guid: fc6d82913dc90954688c10c38ab5ccd3, type: 3}
+  trashBinCollors:
+  - {r: 0, g: 0.4156863, b: 0.6431373, a: 0}
+  - {r: 0.8235295, g: 0.14509805, b: 0.058823533, a: 0}
+  - {r: 0.16470589, g: 0.35686275, b: 0.0627451, a: 0}
+  - {r: 0.8235295, g: 0.6745098, b: 0.058823533, a: 0}
+  - {r: 0.54509807, g: 0.3803922, b: 0.22352943, a: 0}
+  - {r: 0.6, g: 0.5647059, b: 0.61960787, a: 0}
   trashBinGameObject: {fileID: 603329370}
   pointsText: {fileID: 2066934703}
   points: 0
   timeInterval: 3
   countDown: 0
+  timeToChangeTrashBin: 10
+  timeToChangeTrashBinCountDown: 0
 --- !u!4 &2121657912
 Transform:
   m_ObjectHideFlags: 0
