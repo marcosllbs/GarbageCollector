@@ -7,12 +7,9 @@ public class GarbageType : MonoBehaviour
 {
     public enum GarbageTypes
     {
-        Paper,
         Plastic,
         Glass,
-        Metal,
-        Organic,
-        NonRecycle
+        Metal
     }
     public GarbageTypes garbageType;
 

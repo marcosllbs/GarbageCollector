@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -60,6 +60,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7774327238824724513, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7774327238824724513, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -1289722802276629946, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -67,6 +75,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
       propertyPath: m_Name
       value: Plastic Bottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640961329030297385, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -81,7 +93,7 @@ PrefabInstance:
       addedObject: {fileID: 7010505217606188988}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7416125759083288877}
+      addedObject: {fileID: 2652219474495833005}
   m_SourcePrefab: {fileID: 100100000, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
 --- !u!1 &271476687642695735 stripped
 GameObject:
@@ -128,7 +140,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &7416125759083288877
+--- !u!65 &2652219474495833005
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,5 +159,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.1044171, y: 0.31361648, z: 0.10210448}
-  m_Center: {x: -0.00013583303, y: 0.16044526, z: -0.22705363}
+  m_Size: {x: 0.10908025, y: 0.32619533, z: 0.12405392}
+  m_Center: {x: -0.0037434697, y: 0.15722127, z: -0.0012478054}

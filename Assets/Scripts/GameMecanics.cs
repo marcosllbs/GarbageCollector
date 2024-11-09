@@ -82,10 +82,6 @@ public class GameMecanics : MonoBehaviour
         Renderer trashbinRenderer = trashBinGameObject.GetComponent<Renderer>();
         switch (garbageType.garbageType)
         {
-            case GarbageType.GarbageTypes.Paper:
-                trashbinRenderer.material.color = trashBinCollors[0];
-                break;
-
             case GarbageType.GarbageTypes.Plastic:
                 trashbinRenderer.material.color = trashBinCollors[1];
                 break;
@@ -96,14 +92,6 @@ public class GameMecanics : MonoBehaviour
 
             case GarbageType.GarbageTypes.Metal:
                 trashbinRenderer.material.color = trashBinCollors[3];
-                break;
-
-            case GarbageType.GarbageTypes.Organic:
-                trashbinRenderer.material.color = trashBinCollors[4];
-                break;
-
-            case GarbageType.GarbageTypes.NonRecycle:
-                trashbinRenderer.material.color = trashBinCollors[5];
                 break;
         }
     }
