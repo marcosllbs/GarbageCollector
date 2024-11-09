@@ -21,6 +21,7 @@ public class ColliderCallBack : MonoBehaviour
         else
         {
             Debug.LogWarning("You Loose");
+            gameMecanics.CallFalseHitPoints();
         }
 
         Destroy(collidedObject);

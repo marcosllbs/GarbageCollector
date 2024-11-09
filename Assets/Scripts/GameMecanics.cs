@@ -11,9 +11,12 @@ public class GameMecanics : MonoBehaviour
     [SerializeField] List<Color> trashBinCollors;
     [SerializeField] GameObject trashBinGameObject;
     [SerializeField] TMP_Text pointsText;
+    [SerializeField] TMP_Text garbageTypeText;
     GarbageType garbageType;
 
     public int points;
+    public int hitStreak;
+    public bool increaseVelocity = false;
 
 
     public float timeInterval = 5f;
@@ -26,6 +29,13 @@ public class GameMecanics : MonoBehaviour
 
         countDown += Time.deltaTime;
         timeToChangeTrashBinCountDown += Time.deltaTime;
+
+        if (hitStreak >= 1 && increaseVelocity)
+        {
+            timeInterval = System.Math.Max(1, timeInterval - 0.3f);
+            increaseVelocity = false;
+        }
+
         if (countDown >= timeInterval)
         {
             Instantiate(objectsToInstantiate[RamdomizeObjectToInstantiate()], placesToInstantiateObjects[RamdomizePlaceToInstantiate()].transform);
@@ -57,6 +67,18 @@ public class GameMecanics : MonoBehaviour
     public void CallHitPoints()
     {
         points++;
+        hitStreak++;
+
+        if (hitStreak >= 1)
+            increaseVelocity = true;
+
+        pointsText.SetText($"Points:{points}");
+    }
+
+    public void CallFalseHitPoints()
+    {
+        points--;
+        hitStreak = 0;
         pointsText.SetText($"Points:{points}");
     }
 
@@ -74,6 +96,7 @@ public class GameMecanics : MonoBehaviour
         GarbageType trashBinGarbageTypeRealtime = trashBinGameObject.GetComponent<GarbageType>();
         trashBinGarbageTypeRealtime.garbageType = garbageType.ReturnRandomGarbageType();
         SetTrashBinColor();
+        garbageTypeText.SetText(trashBinGarbageTypeRealtime.garbageType.ToString());
         Debug.Log($"THE NEW TRASHBIN TYPE IS {trashBinGarbageTypeRealtime.garbageType}");
     }
 
