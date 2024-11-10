@@ -68,6 +68,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6360496340616550776, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -4589594982110358540, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -1289722802276629946, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -75,6 +83,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
       propertyPath: m_Name
       value: Plastic Bottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5640961329030297385, guid: d14534874c12b8947b7d8126b9eb1da7, type: 3}
       propertyPath: m_LocalPosition.x

@@ -72,13 +72,33 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4908806233937227311, guid: 6050343f47c006b49896ac0f519fd4be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -1251397303293792453, guid: 6050343f47c006b49896ac0f519fd4be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 871574199612364323, guid: 6050343f47c006b49896ac0f519fd4be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6050343f47c006b49896ac0f519fd4be, type: 3}
       propertyPath: m_Name
       value: Miin Standard Can (No Water)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6050343f47c006b49896ac0f519fd4be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 982257444819526241, guid: 6050343f47c006b49896ac0f519fd4be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2421748136657624177, guid: 6050343f47c006b49896ac0f519fd4be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

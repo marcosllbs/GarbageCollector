@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Scripting;
 
 public class GameMecanics : MonoBehaviour
@@ -16,6 +17,7 @@ public class GameMecanics : MonoBehaviour
 
     public int points;
     public int hitStreak;
+    public int lostStreak;
     public bool increaseVelocity = false;
 
 
@@ -30,9 +32,14 @@ public class GameMecanics : MonoBehaviour
         countDown += Time.deltaTime;
         timeToChangeTrashBinCountDown += Time.deltaTime;
 
+        if (lostStreak >= 3)
+        {
+            SceneManager.LoadScene("GameMenu");
+        }
+
         if (hitStreak >= 1 && increaseVelocity)
         {
-            timeInterval = System.Math.Max(1, timeInterval - 0.3f);
+            timeInterval = System.Math.Max(0.5f, timeInterval - 0.3f);
             increaseVelocity = false;
         }
 
@@ -68,8 +75,9 @@ public class GameMecanics : MonoBehaviour
     {
         points++;
         hitStreak++;
+        lostStreak = 0;
 
-        if (hitStreak >= 1)
+        if (hitStreak >= 2)
             increaseVelocity = true;
 
         pointsText.SetText($"Points:{points}");
@@ -79,7 +87,15 @@ public class GameMecanics : MonoBehaviour
     {
         points--;
         hitStreak = 0;
+        lostStreak++;
+
         pointsText.SetText($"Points:{points}");
+    }
+
+    public void CallLostHits()
+    {
+        lostStreak++;
+        Debug.Log("Fui Chamado");
     }
 
     public int RamdomizeObjectToInstantiate()
@@ -96,7 +112,7 @@ public class GameMecanics : MonoBehaviour
         GarbageType trashBinGarbageTypeRealtime = trashBinGameObject.GetComponent<GarbageType>();
         trashBinGarbageTypeRealtime.garbageType = garbageType.ReturnRandomGarbageType();
         SetTrashBinColor();
-        garbageTypeText.SetText(trashBinGarbageTypeRealtime.garbageType.ToString());
+        garbageTypeText.SetText($"A lixeira é:{trashBinGarbageTypeRealtime.garbageType}");
         Debug.Log($"THE NEW TRASHBIN TYPE IS {trashBinGarbageTypeRealtime.garbageType}");
     }
 
@@ -118,4 +134,5 @@ public class GameMecanics : MonoBehaviour
                 break;
         }
     }
+
 }
